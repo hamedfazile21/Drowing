@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Fonta Wesome -->
+    <script src="https://kit.fontawesome.com/5cba022685.js" crossorigin="anonymous"></script>
+    <title>Drawing || Project</title>
+    <link rel="icon" href="img/105-1059505_paint-icon-png-removebg-preview.png">
+</head>
+<body>
+    <div class="container">
+        <div class="item-1">
+            <div class="tools">
+                <div class="tools_drow eraser">
+                    <i class="fa-solid fa-eraser"></i>
+                    <label>Eraser</label>
+                </div>
+                <div class="tools_drow brush active">
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <label>Brush</label>
+                </div>
+                <div class="tools_drow">
+                    <i class="fa-solid fa-palette"></i>
+                    <label>Color</label>
+                    <input type="color" id="color_brush">
+                </div>
+            </div>
+            <input type="range" id="brush_width" min="1" max="10">
+            <div class="buttons">
+                <button id="save">Save</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="item-2">
+            <canvas></canvas>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

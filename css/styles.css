@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#4a98f7 ;
+    outline: none;
+}
+.container{
+    background: white;
+    padding: 20px;
+    width: 60%;
+    border: none;
+    border-radius: 8px;
+}
+.container .item-1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px lightgray;
+    padding-bottom: 10px;
+}
+.container .item-1 .tools{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.tools_drow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 16px;
+    width: 80%;
+}
+.tools_drow label , i{
+    margin: 0 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+.buttons :first-child{
+    padding: 10px;
+    border: none;
+    background:#4a98f7 ;
+    font-size: 16px;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.buttons :last-child{
+    padding: 10px;
+    border: none;
+    background:lightgray ;
+    font-size: 16px;
+    color: black;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.buttons :last-child:hover{
+    background:gray ;
+}
+.container .item-2 canvas{
+    width: 100%;
+    height: 450px;
+    border-radius: 0 0 10px 10px;
+}
+input[type="color"]{
+    border: none;
+    width: 20px;
+    height: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch-wrapper{
+    padding: 0;
+}
+input[type="color"]::-webkit-color-watch{
+    border: 2px solid lightgray;
+}
+.active{
+    color: #4a98f7;
+}
